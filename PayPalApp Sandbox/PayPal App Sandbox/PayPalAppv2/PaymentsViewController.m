@@ -76,6 +76,13 @@
     
     
     if (!payment.processable) {
+        /// Can this payment be processed?
+        /// A payment might not be processable if, for example:
+        /// - the amount is non-positive,
+        /// - the currency is invalid,
+        /// - the amount includes more decimal fraction digits than the currency allows,
+        /// - there's no description, or
+        /// - the payment has already been processed.
     }
     
     PayPalPaymentViewController *paymentViewController = [[PayPalPaymentViewController alloc] initWithPayment:payment
