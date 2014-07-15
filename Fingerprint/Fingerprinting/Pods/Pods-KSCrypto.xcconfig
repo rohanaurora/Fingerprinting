@@ -1,0 +1,1 @@
+PODS_KSCRYPTO_OTHER_LDFLAGS = -framework Security
