@@ -7,12 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "TokenManagement.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    TokenManagement *myToken = [[TokenManagement alloc] init];
+    NSLog(@"%@",[myToken keychainBindings]);
+    
     return YES;
 }
 							

@@ -1,10 +1,13 @@
 PODS:
   - KSCrypto (1.2.2)
+  - PDKeychainBindingsController (0.0.1)
 
 DEPENDENCIES:
   - KSCrypto (~> 1.2)
+  - PDKeychainBindingsController (~> 0.0)
 
 SPEC CHECKSUMS:
   KSCrypto: bd5ff9ef2335cea6f71ac60f72a97a2a178adb40
+  PDKeychainBindingsController: 529f006d0707646b2bf0c79d476acdda58a9a587
 
 COCOAPODS: 0.33.1

@@ -1,1 +1,2 @@
 pod 'KSCrypto', '~> 1.2'
+pod 'PDKeychainBindingsController', '~> 0.0'

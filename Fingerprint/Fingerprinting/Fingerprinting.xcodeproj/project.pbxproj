@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		716B926784224BEBACD0F83E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0DD5F0B9944D8DB1F22246 /* libPods.a */; };
 		93B993A719749BE4001364A1 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B993A619749BE4001364A1 /* JavaScriptCore.framework */; };
+		93B993AA1975CE75001364A1 /* TokenManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B993A91975CE75001364A1 /* TokenManagement.m */; };
 		93E85C7B1974982A00C59A2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E85C7A1974982A00C59A2F /* Foundation.framework */; };
 		93E85C7D1974982A00C59A2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E85C7C1974982A00C59A2F /* CoreGraphics.framework */; };
 		93E85C7F1974982A00C59A2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E85C7E1974982A00C59A2F /* UIKit.framework */; };
@@ -16,7 +17,6 @@
 		93E85C871974982A00C59A2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E85C861974982A00C59A2F /* main.m */; };
 		93E85C8B1974982A00C59A2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E85C8A1974982A00C59A2F /* AppDelegate.m */; };
 		93E85C8E1974982A00C59A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E85C8C1974982A00C59A2F /* Main.storyboard */; };
-		93E85C911974982A00C59A2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E85C901974982A00C59A2F /* ViewController.m */; };
 		93E85C931974982A00C59A2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E85C921974982A00C59A2F /* Images.xcassets */; };
 		93E85C9A1974982A00C59A2F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E85C991974982A00C59A2F /* XCTest.framework */; };
 		93E85C9B1974982A00C59A2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E85C7A1974982A00C59A2F /* Foundation.framework */; };
@@ -38,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		93B993A619749BE4001364A1 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		93B993A81975CE75001364A1 /* TokenManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenManagement.h; sourceTree = "<group>"; };
+		93B993A91975CE75001364A1 /* TokenManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenManagement.m; sourceTree = "<group>"; };
 		93E85C771974982A00C59A2F /* Fingerprinting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fingerprinting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E85C7A1974982A00C59A2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93E85C7C1974982A00C59A2F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,8 +51,6 @@
 		93E85C891974982A00C59A2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93E85C8A1974982A00C59A2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		93E85C8D1974982A00C59A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		93E85C8F1974982A00C59A2F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		93E85C901974982A00C59A2F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		93E85C921974982A00C59A2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93E85C981974982A00C59A2F /* FingerprintingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FingerprintingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E85C991974982A00C59A2F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -127,9 +127,9 @@
 			children = (
 				93E85C891974982A00C59A2F /* AppDelegate.h */,
 				93E85C8A1974982A00C59A2F /* AppDelegate.m */,
+				93B993A81975CE75001364A1 /* TokenManagement.h */,
+				93B993A91975CE75001364A1 /* TokenManagement.m */,
 				93E85C8C1974982A00C59A2F /* Main.storyboard */,
-				93E85C8F1974982A00C59A2F /* ViewController.h */,
-				93E85C901974982A00C59A2F /* ViewController.m */,
 				93E85C921974982A00C59A2F /* Images.xcassets */,
 				93E85C811974982A00C59A2F /* Supporting Files */,
 			);
@@ -298,8 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93E85C911974982A00C59A2F /* ViewController.m in Sources */,
 				93E85C8B1974982A00C59A2F /* AppDelegate.m in Sources */,
+				93B993AA1975CE75001364A1 /* TokenManagement.m in Sources */,
 				93E85C871974982A00C59A2F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

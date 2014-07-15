@@ -12,3 +12,9 @@
 #define COCOAPODS_VERSION_MINOR_KSCrypto 2
 #define COCOAPODS_VERSION_PATCH_KSCrypto 2
 
+// PDKeychainBindingsController
+#define COCOAPODS_POD_AVAILABLE_PDKeychainBindingsController
+#define COCOAPODS_VERSION_MAJOR_PDKeychainBindingsController 0
+#define COCOAPODS_VERSION_MINOR_PDKeychainBindingsController 0
+#define COCOAPODS_VERSION_PATCH_PDKeychainBindingsController 1
+
