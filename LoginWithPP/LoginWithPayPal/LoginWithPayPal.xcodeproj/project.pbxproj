@@ -1,470 +1,1128 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		93908E7A197D8C8D00B5861C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93908E79197D8C8D00B5861C /* Foundation.framework */; };
-		93908E7C197D8C8D00B5861C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93908E7B197D8C8D00B5861C /* CoreGraphics.framework */; };
-		93908E7E197D8C8D00B5861C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93908E7D197D8C8D00B5861C /* UIKit.framework */; };
-		93908E84197D8C8D00B5861C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93908E82197D8C8D00B5861C /* InfoPlist.strings */; };
-		93908E86197D8C8D00B5861C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93908E85197D8C8D00B5861C /* main.m */; };
-		93908E8A197D8C8D00B5861C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93908E89197D8C8D00B5861C /* AppDelegate.m */; };
-		93908E8C197D8C8D00B5861C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93908E8B197D8C8D00B5861C /* Images.xcassets */; };
-		93908E93197D8C8D00B5861C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93908E92197D8C8D00B5861C /* XCTest.framework */; };
-		93908E94197D8C8D00B5861C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93908E79197D8C8D00B5861C /* Foundation.framework */; };
-		93908E95197D8C8D00B5861C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93908E7D197D8C8D00B5861C /* UIKit.framework */; };
-		93908E9D197D8C8D00B5861C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93908E9B197D8C8D00B5861C /* InfoPlist.strings */; };
-		93908E9F197D8C8D00B5861C /* LoginWithPayPalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93908E9E197D8C8D00B5861C /* LoginWithPayPalTests.m */; };
-		93908EAA197D8CAF00B5861C /* PayPalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93908EA9197D8CAF00B5861C /* PayPalViewController.m */; };
-		93908EAD197E0D4800B5861C /* BuyNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93908EAC197E0D4800B5861C /* BuyNowViewController.m */; };
-		93908EAF197E0F8100B5861C /* loginwithpaypalbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 93908EAE197E0F8100B5861C /* loginwithpaypalbutton.png */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		93908E96197D8C8D00B5861C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 93908E6E197D8C8D00B5861C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 93908E75197D8C8D00B5861C;
-			remoteInfo = LoginWithPayPal;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		93908E76197D8C8D00B5861C /* LoginWithPayPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginWithPayPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		93908E79197D8C8D00B5861C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		93908E7B197D8C8D00B5861C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		93908E7D197D8C8D00B5861C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		93908E81197D8C8D00B5861C /* LoginWithPayPal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoginWithPayPal-Info.plist"; sourceTree = "<group>"; };
-		93908E83197D8C8D00B5861C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		93908E85197D8C8D00B5861C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		93908E87197D8C8D00B5861C /* LoginWithPayPal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoginWithPayPal-Prefix.pch"; sourceTree = "<group>"; };
-		93908E88197D8C8D00B5861C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		93908E89197D8C8D00B5861C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		93908E8B197D8C8D00B5861C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		93908E91197D8C8D00B5861C /* LoginWithPayPalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginWithPayPalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93908E92197D8C8D00B5861C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		93908E9A197D8C8D00B5861C /* LoginWithPayPalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoginWithPayPalTests-Info.plist"; sourceTree = "<group>"; };
-		93908E9C197D8C8D00B5861C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		93908E9E197D8C8D00B5861C /* LoginWithPayPalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginWithPayPalTests.m; sourceTree = "<group>"; };
-		93908EA8197D8CAF00B5861C /* PayPalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalViewController.h; sourceTree = "<group>"; };
-		93908EA9197D8CAF00B5861C /* PayPalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayPalViewController.m; sourceTree = "<group>"; };
-		93908EAB197E0D4800B5861C /* BuyNowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyNowViewController.h; sourceTree = "<group>"; };
-		93908EAC197E0D4800B5861C /* BuyNowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyNowViewController.m; sourceTree = "<group>"; };
-		93908EAE197E0F8100B5861C /* loginwithpaypalbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginwithpaypalbutton.png; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		93908E73197D8C8D00B5861C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93908E7C197D8C8D00B5861C /* CoreGraphics.framework in Frameworks */,
-				93908E7E197D8C8D00B5861C /* UIKit.framework in Frameworks */,
-				93908E7A197D8C8D00B5861C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93908E8E197D8C8D00B5861C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93908E93197D8C8D00B5861C /* XCTest.framework in Frameworks */,
-				93908E95197D8C8D00B5861C /* UIKit.framework in Frameworks */,
-				93908E94197D8C8D00B5861C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		93908E6D197D8C8D00B5861C = {
-			isa = PBXGroup;
-			children = (
-				93908E7F197D8C8D00B5861C /* LoginWithPayPal */,
-				93908E98197D8C8D00B5861C /* LoginWithPayPalTests */,
-				93908E78197D8C8D00B5861C /* Frameworks */,
-				93908E77197D8C8D00B5861C /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		93908E77197D8C8D00B5861C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				93908E76197D8C8D00B5861C /* LoginWithPayPal.app */,
-				93908E91197D8C8D00B5861C /* LoginWithPayPalTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		93908E78197D8C8D00B5861C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				93908E79197D8C8D00B5861C /* Foundation.framework */,
-				93908E7B197D8C8D00B5861C /* CoreGraphics.framework */,
-				93908E7D197D8C8D00B5861C /* UIKit.framework */,
-				93908E92197D8C8D00B5861C /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		93908E7F197D8C8D00B5861C /* LoginWithPayPal */ = {
-			isa = PBXGroup;
-			children = (
-				93908E88197D8C8D00B5861C /* AppDelegate.h */,
-				93908E89197D8C8D00B5861C /* AppDelegate.m */,
-				93908EAB197E0D4800B5861C /* BuyNowViewController.h */,
-				93908EAC197E0D4800B5861C /* BuyNowViewController.m */,
-				93908EA8197D8CAF00B5861C /* PayPalViewController.h */,
-				93908EA9197D8CAF00B5861C /* PayPalViewController.m */,
-				93908E8B197D8C8D00B5861C /* Images.xcassets */,
-				93908E80197D8C8D00B5861C /* Supporting Files */,
-			);
-			path = LoginWithPayPal;
-			sourceTree = "<group>";
-		};
-		93908E80197D8C8D00B5861C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				93908EAE197E0F8100B5861C /* loginwithpaypalbutton.png */,
-				93908E81197D8C8D00B5861C /* LoginWithPayPal-Info.plist */,
-				93908E82197D8C8D00B5861C /* InfoPlist.strings */,
-				93908E85197D8C8D00B5861C /* main.m */,
-				93908E87197D8C8D00B5861C /* LoginWithPayPal-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		93908E98197D8C8D00B5861C /* LoginWithPayPalTests */ = {
-			isa = PBXGroup;
-			children = (
-				93908E9E197D8C8D00B5861C /* LoginWithPayPalTests.m */,
-				93908E99197D8C8D00B5861C /* Supporting Files */,
-			);
-			path = LoginWithPayPalTests;
-			sourceTree = "<group>";
-		};
-		93908E99197D8C8D00B5861C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				93908E9A197D8C8D00B5861C /* LoginWithPayPalTests-Info.plist */,
-				93908E9B197D8C8D00B5861C /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		93908E75197D8C8D00B5861C /* LoginWithPayPal */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 93908EA2197D8C8D00B5861C /* Build configuration list for PBXNativeTarget "LoginWithPayPal" */;
-			buildPhases = (
-				93908E72197D8C8D00B5861C /* Sources */,
-				93908E73197D8C8D00B5861C /* Frameworks */,
-				93908E74197D8C8D00B5861C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LoginWithPayPal;
-			productName = LoginWithPayPal;
-			productReference = 93908E76197D8C8D00B5861C /* LoginWithPayPal.app */;
-			productType = "com.apple.product-type.application";
-		};
-		93908E90197D8C8D00B5861C /* LoginWithPayPalTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 93908EA5197D8C8D00B5861C /* Build configuration list for PBXNativeTarget "LoginWithPayPalTests" */;
-			buildPhases = (
-				93908E8D197D8C8D00B5861C /* Sources */,
-				93908E8E197D8C8D00B5861C /* Frameworks */,
-				93908E8F197D8C8D00B5861C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				93908E97197D8C8D00B5861C /* PBXTargetDependency */,
-			);
-			name = LoginWithPayPalTests;
-			productName = LoginWithPayPalTests;
-			productReference = 93908E91197D8C8D00B5861C /* LoginWithPayPalTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		93908E6E197D8C8D00B5861C /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "eBay Inc.";
-				TargetAttributes = {
-					93908E90197D8C8D00B5861C = {
-						TestTargetID = 93908E75197D8C8D00B5861C;
-					};
-				};
-			};
-			buildConfigurationList = 93908E71197D8C8D00B5861C /* Build configuration list for PBXProject "LoginWithPayPal" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 93908E6D197D8C8D00B5861C;
-			productRefGroup = 93908E77197D8C8D00B5861C /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				93908E75197D8C8D00B5861C /* LoginWithPayPal */,
-				93908E90197D8C8D00B5861C /* LoginWithPayPalTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		93908E74197D8C8D00B5861C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93908EAF197E0F8100B5861C /* loginwithpaypalbutton.png in Resources */,
-				93908E84197D8C8D00B5861C /* InfoPlist.strings in Resources */,
-				93908E8C197D8C8D00B5861C /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93908E8F197D8C8D00B5861C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93908E9D197D8C8D00B5861C /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		93908E72197D8C8D00B5861C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93908EAD197E0D4800B5861C /* BuyNowViewController.m in Sources */,
-				93908E8A197D8C8D00B5861C /* AppDelegate.m in Sources */,
-				93908E86197D8C8D00B5861C /* main.m in Sources */,
-				93908EAA197D8CAF00B5861C /* PayPalViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93908E8D197D8C8D00B5861C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93908E9F197D8C8D00B5861C /* LoginWithPayPalTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		93908E97197D8C8D00B5861C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 93908E75197D8C8D00B5861C /* LoginWithPayPal */;
-			targetProxy = 93908E96197D8C8D00B5861C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		93908E82197D8C8D00B5861C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				93908E83197D8C8D00B5861C /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		93908E9B197D8C8D00B5861C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				93908E9C197D8C8D00B5861C /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		93908EA0197D8C8D00B5861C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		93908EA1197D8C8D00B5861C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		93908EA3197D8C8D00B5861C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LoginWithPayPal/LoginWithPayPal-Prefix.pch";
-				INFOPLIST_FILE = "LoginWithPayPal/LoginWithPayPal-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		93908EA4197D8C8D00B5861C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LoginWithPayPal/LoginWithPayPal-Prefix.pch";
-				INFOPLIST_FILE = "LoginWithPayPal/LoginWithPayPal-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		93908EA6197D8C8D00B5861C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LoginWithPayPal.app/LoginWithPayPal";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LoginWithPayPal/LoginWithPayPal-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "LoginWithPayPalTests/LoginWithPayPalTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		93908EA7197D8C8D00B5861C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LoginWithPayPal.app/LoginWithPayPal";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LoginWithPayPal/LoginWithPayPal-Prefix.pch";
-				INFOPLIST_FILE = "LoginWithPayPalTests/LoginWithPayPalTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		93908E71197D8C8D00B5861C /* Build configuration list for PBXProject "LoginWithPayPal" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				93908EA0197D8C8D00B5861C /* Debug */,
-				93908EA1197D8C8D00B5861C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		93908EA2197D8C8D00B5861C /* Build configuration list for PBXNativeTarget "LoginWithPayPal" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				93908EA3197D8C8D00B5861C /* Debug */,
-				93908EA4197D8C8D00B5861C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		93908EA5197D8C8D00B5861C /* Build configuration list for PBXNativeTarget "LoginWithPayPalTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				93908EA6197D8C8D00B5861C /* Debug */,
-				93908EA7197D8C8D00B5861C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 93908E6E197D8C8D00B5861C /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0DF77CCB1B7641E1BF2DFDE4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>8909102BCEE24505B80325D7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0DF77CCB1B7641E1BF2DFDE4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>935B7006197F00E200AB7C81</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Podfile</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>935B7007197F00E200AB7C81</key>
+		<dict>
+			<key>fileRef</key>
+			<string>935B7006197F00E200AB7C81</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908E6D197D8C8D00B5861C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>935B7006197F00E200AB7C81</string>
+				<string>93908E7F197D8C8D00B5861C</string>
+				<string>93908E98197D8C8D00B5861C</string>
+				<string>93908E78197D8C8D00B5861C</string>
+				<string>93908E77197D8C8D00B5861C</string>
+				<string>E9D51C03756549E58A6E12CF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E6E197D8C8D00B5861C</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>eBay Inc.</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>93908E90197D8C8D00B5861C</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>93908E75197D8C8D00B5861C</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>93908E71197D8C8D00B5861C</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>93908E6D197D8C8D00B5861C</string>
+			<key>productRefGroup</key>
+			<string>93908E77197D8C8D00B5861C</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>93908E75197D8C8D00B5861C</string>
+				<string>93908E90197D8C8D00B5861C</string>
+			</array>
+		</dict>
+		<key>93908E71197D8C8D00B5861C</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>93908EA0197D8C8D00B5861C</string>
+				<string>93908EA1197D8C8D00B5861C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>93908E72197D8C8D00B5861C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>93908EAD197E0D4800B5861C</string>
+				<string>93908E8A197D8C8D00B5861C</string>
+				<string>93908E86197D8C8D00B5861C</string>
+				<string>93908EAA197D8CAF00B5861C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>93908E73197D8C8D00B5861C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>93908E7C197D8C8D00B5861C</string>
+				<string>93908E7E197D8C8D00B5861C</string>
+				<string>93908E7A197D8C8D00B5861C</string>
+				<string>8909102BCEE24505B80325D7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>93908E74197D8C8D00B5861C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>93908EAF197E0F8100B5861C</string>
+				<string>93908E84197D8C8D00B5861C</string>
+				<string>935B7007197F00E200AB7C81</string>
+				<string>93908E8C197D8C8D00B5861C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>93908E75197D8C8D00B5861C</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>93908EA2197D8C8D00B5861C</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D044C87D276A47E584C5C22D</string>
+				<string>93908E72197D8C8D00B5861C</string>
+				<string>93908E73197D8C8D00B5861C</string>
+				<string>93908E74197D8C8D00B5861C</string>
+				<string>C68FEF17C3A14A88A81F0F63</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>LoginWithPayPal</string>
+			<key>productName</key>
+			<string>LoginWithPayPal</string>
+			<key>productReference</key>
+			<string>93908E76197D8C8D00B5861C</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>93908E76197D8C8D00B5861C</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>LoginWithPayPal.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>93908E77197D8C8D00B5861C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93908E76197D8C8D00B5861C</string>
+				<string>93908E91197D8C8D00B5861C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E78197D8C8D00B5861C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93908E79197D8C8D00B5861C</string>
+				<string>93908E7B197D8C8D00B5861C</string>
+				<string>93908E7D197D8C8D00B5861C</string>
+				<string>93908E92197D8C8D00B5861C</string>
+				<string>0DF77CCB1B7641E1BF2DFDE4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E79197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>93908E7A197D8C8D00B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908E79197D8C8D00B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908E7B197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>93908E7C197D8C8D00B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908E7B197D8C8D00B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908E7D197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>93908E7E197D8C8D00B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908E7D197D8C8D00B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908E7F197D8C8D00B5861C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93908E88197D8C8D00B5861C</string>
+				<string>93908E89197D8C8D00B5861C</string>
+				<string>93908EAB197E0D4800B5861C</string>
+				<string>93908EAC197E0D4800B5861C</string>
+				<string>93908EA8197D8CAF00B5861C</string>
+				<string>93908EA9197D8CAF00B5861C</string>
+				<string>93908E8B197D8C8D00B5861C</string>
+				<string>93908E80197D8C8D00B5861C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>LoginWithPayPal</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E80197D8C8D00B5861C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93908EAE197E0F8100B5861C</string>
+				<string>93908E81197D8C8D00B5861C</string>
+				<string>93908E82197D8C8D00B5861C</string>
+				<string>93908E85197D8C8D00B5861C</string>
+				<string>93908E87197D8C8D00B5861C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E81197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>LoginWithPayPal-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E82197D8C8D00B5861C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93908E83197D8C8D00B5861C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E83197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E84197D8C8D00B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908E82197D8C8D00B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908E85197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E86197D8C8D00B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908E85197D8C8D00B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908E87197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LoginWithPayPal-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E88197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E89197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E8A197D8C8D00B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908E89197D8C8D00B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908E8B197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E8C197D8C8D00B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908E8B197D8C8D00B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908E8D197D8C8D00B5861C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>93908E9F197D8C8D00B5861C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>93908E8E197D8C8D00B5861C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>93908E93197D8C8D00B5861C</string>
+				<string>93908E95197D8C8D00B5861C</string>
+				<string>93908E94197D8C8D00B5861C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>93908E8F197D8C8D00B5861C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>93908E9D197D8C8D00B5861C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>93908E90197D8C8D00B5861C</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>93908EA5197D8C8D00B5861C</string>
+			<key>buildPhases</key>
+			<array>
+				<string>93908E8D197D8C8D00B5861C</string>
+				<string>93908E8E197D8C8D00B5861C</string>
+				<string>93908E8F197D8C8D00B5861C</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>93908E97197D8C8D00B5861C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>LoginWithPayPalTests</string>
+			<key>productName</key>
+			<string>LoginWithPayPalTests</string>
+			<key>productReference</key>
+			<string>93908E91197D8C8D00B5861C</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>93908E91197D8C8D00B5861C</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>LoginWithPayPalTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>93908E92197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>93908E93197D8C8D00B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908E92197D8C8D00B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908E94197D8C8D00B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908E79197D8C8D00B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908E95197D8C8D00B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908E7D197D8C8D00B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908E96197D8C8D00B5861C</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>93908E6E197D8C8D00B5861C</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>93908E75197D8C8D00B5861C</string>
+			<key>remoteInfo</key>
+			<string>LoginWithPayPal</string>
+		</dict>
+		<key>93908E97197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>93908E75197D8C8D00B5861C</string>
+			<key>targetProxy</key>
+			<string>93908E96197D8C8D00B5861C</string>
+		</dict>
+		<key>93908E98197D8C8D00B5861C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93908E9E197D8C8D00B5861C</string>
+				<string>93908E99197D8C8D00B5861C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>LoginWithPayPalTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E99197D8C8D00B5861C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93908E9A197D8C8D00B5861C</string>
+				<string>93908E9B197D8C8D00B5861C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E9A197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>LoginWithPayPalTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E9B197D8C8D00B5861C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93908E9C197D8C8D00B5861C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E9C197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E9D197D8C8D00B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908E9B197D8C8D00B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908E9E197D8C8D00B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LoginWithPayPalTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908E9F197D8C8D00B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908E9E197D8C8D00B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908EA0197D8C8D00B5861C</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>93908EA1197D8C8D00B5861C</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>93908EA2197D8C8D00B5861C</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>93908EA3197D8C8D00B5861C</string>
+				<string>93908EA4197D8C8D00B5861C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>93908EA3197D8C8D00B5861C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E9D51C03756549E58A6E12CF</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>LoginWithPayPal/LoginWithPayPal-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LoginWithPayPal/LoginWithPayPal-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>93908EA4197D8C8D00B5861C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E9D51C03756549E58A6E12CF</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>LoginWithPayPal/LoginWithPayPal-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LoginWithPayPal/LoginWithPayPal-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>93908EA5197D8C8D00B5861C</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>93908EA6197D8C8D00B5861C</string>
+				<string>93908EA7197D8C8D00B5861C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>93908EA6197D8C8D00B5861C</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/LoginWithPayPal.app/LoginWithPayPal</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>LoginWithPayPal/LoginWithPayPal-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>LoginWithPayPalTests/LoginWithPayPalTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>93908EA7197D8C8D00B5861C</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/LoginWithPayPal.app/LoginWithPayPal</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>LoginWithPayPal/LoginWithPayPal-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LoginWithPayPalTests/LoginWithPayPalTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>93908EA8197D8CAF00B5861C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PayPalViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908EA9197D8CAF00B5861C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PayPalViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908EAA197D8CAF00B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908EA9197D8CAF00B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908EAB197E0D4800B5861C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BuyNowViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908EAC197E0D4800B5861C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BuyNowViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908EAD197E0D4800B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908EAC197E0D4800B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93908EAE197E0F8100B5861C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>loginwithpaypalbutton.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93908EAF197E0F8100B5861C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93908EAE197E0F8100B5861C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C68FEF17C3A14A88A81F0F63</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D044C87D276A47E584C5C22D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>E9D51C03756549E58A6E12CF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>93908E6E197D8C8D00B5861C</string>
+</dict>
+</plist>

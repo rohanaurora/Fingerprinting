@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PayPalViewController : UIViewController <UIWebViewDelegate>
-@property (strong, nonatomic) UIWebView *webView;
 
+@property (strong, nonatomic) UIWebView *webView;
 
 @end
