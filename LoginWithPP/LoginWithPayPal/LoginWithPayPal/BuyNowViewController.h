@@ -10,6 +10,4 @@
 
 @interface BuyNowViewController : UIViewController
 
-
-
 @end

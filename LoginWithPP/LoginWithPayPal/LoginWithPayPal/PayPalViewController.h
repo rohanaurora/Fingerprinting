@@ -12,4 +12,7 @@
 
 @property (strong, nonatomic) UIWebView *webView;
 
+- (void)barCloseButtonPressed;
+
+
 @end

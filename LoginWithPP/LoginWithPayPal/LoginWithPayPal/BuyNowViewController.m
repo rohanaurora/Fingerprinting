@@ -21,14 +21,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIButton *myButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 320, 600)];
-    
-    [myButton setImage:[UIImage imageNamed:@"loginwithpaypalbutton.png"] forState:UIControlStateNormal];
-    
-    [self.view addSubview:myButton];
-    
-    [myButton addTarget:self action:@selector(goToLogin) forControlEvents:UIControlEventTouchUpInside];
- 
+    UIButton *loginWithPPButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 320, 600)];
+    [loginWithPPButton setImage:[UIImage imageNamed:@"loginwithpaypalbutton.png"] forState:UIControlStateNormal];
+    [self.view addSubview:loginWithPPButton];
+    [loginWithPPButton addTarget:self action:@selector(goToLogin) forControlEvents:UIControlEventTouchUpInside];
 }
 
 
@@ -40,7 +36,6 @@
     [self setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
     [self presentViewController:navigation animated:YES completion:nil];
     
-  
 }
 
 - (void)didReceiveMemoryWarning
