@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8909102BCEE24505B80325D7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF77CCB1B7641E1BF2DFDE4 /* libPods.a */; };
+		93134D83198AC05F00892148 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 93134D82198AC05F00892148 /* 5.png */; };
+		93134D85198AC1B800892148 /* pinterest_logged_into_paypal.png in Resources */ = {isa = PBXBuildFile; fileRef = 93134D84198AC1B800892148 /* pinterest_logged_into_paypal.png */; };
+		93134D87198AC23400892148 /* first_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 93134D86198AC23400892148 /* first_screen.png */; };
+		935A9CC31986C3DB00044F53 /* UserIdentityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 935A9CC21986C3DB00044F53 /* UserIdentityViewController.m */; };
 		935B7007197F00E200AB7C81 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 935B7006197F00E200AB7C81 /* Podfile */; };
 		935B704B1982D43900AB7C81 /* CheckReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 935B704A1982D43900AB7C81 /* CheckReachability.m */; };
 		935B70511982D67600AB7C81 /* LoginURLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 935B70501982D67600AB7C81 /* LoginURLViewController.m */; };
@@ -26,6 +30,11 @@
 		93908EAA197D8CAF00B5861C /* PayPalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93908EA9197D8CAF00B5861C /* PayPalViewController.m */; };
 		93908EAD197E0D4800B5861C /* BuyNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93908EAC197E0D4800B5861C /* BuyNowViewController.m */; };
 		93908EAF197E0F8100B5861C /* loginwithpaypalbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 93908EAE197E0F8100B5861C /* loginwithpaypalbutton.png */; };
+		93A1871519876C10002A4DA1 /* buy_now_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 93A1871419876C10002A4DA1 /* buy_now_button.png */; };
+		93A187181987F983002A4DA1 /* PayPalGuestLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A187171987F983002A4DA1 /* PayPalGuestLoginViewController.m */; };
+		93A187601987FE97002A4DA1 /* RBOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 93A1875E1987FE97002A4DA1 /* RBOff.png */; };
+		93A187611987FE97002A4DA1 /* RBOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 93A1875F1987FE97002A4DA1 /* RBOn.png */; };
+		93CE7DDC1988382C007F86CD /* CreateCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CE7DDB1988382C007F86CD /* CreateCartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +49,12 @@
 
 /* Begin PBXFileReference section */
 		0DF77CCB1B7641E1BF2DFDE4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		935B7006197F00E200AB7C81 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		93134D82198AC05F00892148 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		93134D84198AC1B800892148 /* pinterest_logged_into_paypal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinterest_logged_into_paypal.png; sourceTree = "<group>"; };
+		93134D86198AC23400892148 /* first_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first_screen.png; sourceTree = "<group>"; };
+		935A9CC11986C3DB00044F53 /* UserIdentityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserIdentityViewController.h; sourceTree = "<group>"; };
+		935A9CC21986C3DB00044F53 /* UserIdentityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserIdentityViewController.m; sourceTree = "<group>"; };
+		935B7006197F00E200AB7C81 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		935B70491982D43900AB7C81 /* CheckReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckReachability.h; sourceTree = "<group>"; };
 		935B704A1982D43900AB7C81 /* CheckReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckReachability.m; sourceTree = "<group>"; };
 		935B704F1982D67600AB7C81 /* LoginURLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginURLViewController.h; sourceTree = "<group>"; };
@@ -66,6 +80,13 @@
 		93908EAB197E0D4800B5861C /* BuyNowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyNowViewController.h; sourceTree = "<group>"; };
 		93908EAC197E0D4800B5861C /* BuyNowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyNowViewController.m; sourceTree = "<group>"; };
 		93908EAE197E0F8100B5861C /* loginwithpaypalbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginwithpaypalbutton.png; sourceTree = "<group>"; };
+		93A1871419876C10002A4DA1 /* buy_now_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buy_now_button.png; sourceTree = "<group>"; };
+		93A187161987F983002A4DA1 /* PayPalGuestLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalGuestLoginViewController.h; sourceTree = "<group>"; };
+		93A187171987F983002A4DA1 /* PayPalGuestLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayPalGuestLoginViewController.m; sourceTree = "<group>"; };
+		93A1875E1987FE97002A4DA1 /* RBOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RBOff.png; sourceTree = "<group>"; };
+		93A1875F1987FE97002A4DA1 /* RBOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RBOn.png; sourceTree = "<group>"; };
+		93CE7DDA1988382C007F86CD /* CreateCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateCartViewController.h; sourceTree = "<group>"; };
+		93CE7DDB1988382C007F86CD /* CreateCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateCartViewController.m; sourceTree = "<group>"; };
 		E9D51C03756549E58A6E12CF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +115,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		931861F31987591F004742DC /* Project Images */ = {
+			isa = PBXGroup;
+			children = (
+				93134D84198AC1B800892148 /* pinterest_logged_into_paypal.png */,
+				93134D86198AC23400892148 /* first_screen.png */,
+				93134D82198AC05F00892148 /* 5.png */,
+				93A1875E1987FE97002A4DA1 /* RBOff.png */,
+				93A1875F1987FE97002A4DA1 /* RBOn.png */,
+				93A1871419876C10002A4DA1 /* buy_now_button.png */,
+			);
+			name = "Project Images";
+			sourceTree = "<group>";
+		};
 		93908E6D197D8C8D00B5861C = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +136,6 @@
 				93908E98197D8C8D00B5861C /* LoginWithPayPalTests */,
 				93908E78197D8C8D00B5861C /* Frameworks */,
 				93908E77197D8C8D00B5861C /* Products */,
-				E9D51C03756549E58A6E12CF /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +151,7 @@
 		93908E78197D8C8D00B5861C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9D51C03756549E58A6E12CF /* Pods.xcconfig */,
 				93908E79197D8C8D00B5861C /* Foundation.framework */,
 				93908E7B197D8C8D00B5861C /* CoreGraphics.framework */,
 				93908E7D197D8C8D00B5861C /* UIKit.framework */,
@@ -130,16 +164,15 @@
 		93908E7F197D8C8D00B5861C /* LoginWithPayPal */ = {
 			isa = PBXGroup;
 			children = (
-				93908E88197D8C8D00B5861C /* AppDelegate.h */,
-				93908E89197D8C8D00B5861C /* AppDelegate.m */,
-				93908EAB197E0D4800B5861C /* BuyNowViewController.h */,
-				93908EAC197E0D4800B5861C /* BuyNowViewController.m */,
-				93908EA8197D8CAF00B5861C /* PayPalViewController.h */,
-				93908EA9197D8CAF00B5861C /* PayPalViewController.m */,
-				935B704F1982D67600AB7C81 /* LoginURLViewController.h */,
-				935B70501982D67600AB7C81 /* LoginURLViewController.m */,
-				935B70491982D43900AB7C81 /* CheckReachability.h */,
-				935B704A1982D43900AB7C81 /* CheckReachability.m */,
+				93C751B7198A1F7900DE37A0 /* App Delegate Class */,
+				93C751B6198A1F5300DE37A0 /* WebView URL Class */,
+				93C751B8198A1F8E00DE37A0 /* Buy Now Home Screen */,
+				93C751BD198A203D00DE37A0 /* PayPal Login WebView Class */,
+				93C751BC198A1FFB00DE37A0 /* Identify User Session Class */,
+				93C751BB198A1FD700DE37A0 /* PayPal Guest User Class */,
+				93C751BA198A1FC500DE37A0 /* Create Cart Class */,
+				93C751B9198A1FAC00DE37A0 /* Check Internet Connection */,
+				931861F31987591F004742DC /* Project Images */,
 				93908E8B197D8C8D00B5861C /* Images.xcassets */,
 				93908E80197D8C8D00B5861C /* Supporting Files */,
 			);
@@ -174,6 +207,78 @@
 				93908E9B197D8C8D00B5861C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93C751B6198A1F5300DE37A0 /* WebView URL Class */ = {
+			isa = PBXGroup;
+			children = (
+				935B704F1982D67600AB7C81 /* LoginURLViewController.h */,
+				935B70501982D67600AB7C81 /* LoginURLViewController.m */,
+			);
+			name = "WebView URL Class";
+			sourceTree = "<group>";
+		};
+		93C751B7198A1F7900DE37A0 /* App Delegate Class */ = {
+			isa = PBXGroup;
+			children = (
+				93908E88197D8C8D00B5861C /* AppDelegate.h */,
+				93908E89197D8C8D00B5861C /* AppDelegate.m */,
+			);
+			name = "App Delegate Class";
+			sourceTree = "<group>";
+		};
+		93C751B8198A1F8E00DE37A0 /* Buy Now Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				93908EAB197E0D4800B5861C /* BuyNowViewController.h */,
+				93908EAC197E0D4800B5861C /* BuyNowViewController.m */,
+			);
+			name = "Buy Now Home Screen";
+			sourceTree = "<group>";
+		};
+		93C751B9198A1FAC00DE37A0 /* Check Internet Connection */ = {
+			isa = PBXGroup;
+			children = (
+				935B70491982D43900AB7C81 /* CheckReachability.h */,
+				935B704A1982D43900AB7C81 /* CheckReachability.m */,
+			);
+			name = "Check Internet Connection";
+			sourceTree = "<group>";
+		};
+		93C751BA198A1FC500DE37A0 /* Create Cart Class */ = {
+			isa = PBXGroup;
+			children = (
+				93CE7DDA1988382C007F86CD /* CreateCartViewController.h */,
+				93CE7DDB1988382C007F86CD /* CreateCartViewController.m */,
+			);
+			name = "Create Cart Class";
+			sourceTree = "<group>";
+		};
+		93C751BB198A1FD700DE37A0 /* PayPal Guest User Class */ = {
+			isa = PBXGroup;
+			children = (
+				93A187161987F983002A4DA1 /* PayPalGuestLoginViewController.h */,
+				93A187171987F983002A4DA1 /* PayPalGuestLoginViewController.m */,
+			);
+			name = "PayPal Guest User Class";
+			sourceTree = "<group>";
+		};
+		93C751BC198A1FFB00DE37A0 /* Identify User Session Class */ = {
+			isa = PBXGroup;
+			children = (
+				935A9CC11986C3DB00044F53 /* UserIdentityViewController.h */,
+				935A9CC21986C3DB00044F53 /* UserIdentityViewController.m */,
+			);
+			name = "Identify User Session Class";
+			sourceTree = "<group>";
+		};
+		93C751BD198A203D00DE37A0 /* PayPal Login WebView Class */ = {
+			isa = PBXGroup;
+			children = (
+				93908EA8197D8CAF00B5861C /* PayPalViewController.h */,
+				93908EA9197D8CAF00B5861C /* PayPalViewController.m */,
+			);
+			name = "PayPal Login WebView Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +330,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "eBay Inc.";
 				TargetAttributes = {
+					93908E75197D8C8D00B5861C = {
+						DevelopmentTeam = YTABQD33G5;
+					};
 					93908E90197D8C8D00B5861C = {
 						TestTargetID = 93908E75197D8C8D00B5861C;
 					};
@@ -254,8 +362,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				93908EAF197E0F8100B5861C /* loginwithpaypalbutton.png in Resources */,
+				93134D85198AC1B800892148 /* pinterest_logged_into_paypal.png in Resources */,
+				93A1871519876C10002A4DA1 /* buy_now_button.png in Resources */,
 				93908E84197D8C8D00B5861C /* InfoPlist.strings in Resources */,
+				93A187601987FE97002A4DA1 /* RBOff.png in Resources */,
 				935B7007197F00E200AB7C81 /* Podfile in Resources */,
+				93134D83198AC05F00892148 /* 5.png in Resources */,
+				93A187611987FE97002A4DA1 /* RBOn.png in Resources */,
+				93134D87198AC23400892148 /* first_screen.png in Resources */,
 				93908E8C197D8C8D00B5861C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,9 +422,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935A9CC31986C3DB00044F53 /* UserIdentityViewController.m in Sources */,
 				935B70511982D67600AB7C81 /* LoginURLViewController.m in Sources */,
 				93908EAD197E0D4800B5861C /* BuyNowViewController.m in Sources */,
 				93908E8A197D8C8D00B5861C /* AppDelegate.m in Sources */,
+				93CE7DDC1988382C007F86CD /* CreateCartViewController.m in Sources */,
+				93A187181987F983002A4DA1 /* PayPalGuestLoginViewController.m in Sources */,
 				93908E86197D8C8D00B5861C /* main.m in Sources */,
 				93908EAA197D8CAF00B5861C /* PayPalViewController.m in Sources */,
 				935B704B1982D43900AB7C81 /* CheckReachability.m in Sources */,
@@ -431,6 +548,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginWithPayPal/LoginWithPayPal-Prefix.pch";
 				INFOPLIST_FILE = "LoginWithPayPal/LoginWithPayPal-Info.plist";
@@ -445,6 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginWithPayPal/LoginWithPayPal-Prefix.pch";
 				INFOPLIST_FILE = "LoginWithPayPal/LoginWithPayPal-Info.plist";

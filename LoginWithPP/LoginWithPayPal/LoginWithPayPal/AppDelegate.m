@@ -18,13 +18,12 @@
     // Override point for customization after application launch.
     
     BuyNowViewController *buyVC = [[BuyNowViewController alloc] init];
-    buyVC.title = @"Twitter's UI";
+    buyVC.title = @"Pinterest Mock UI";
 
-    UINavigationController *myNav = [[UINavigationController alloc] initWithRootViewController:buyVC];
-    
-    self.window.rootViewController = myNav;
+    UINavigationController *mainNav = [[UINavigationController alloc] initWithRootViewController:buyVC];
+    self.window.rootViewController = mainNav;
 
-    UINavigationBar *navigationBar = myNav.navigationBar;
+    UINavigationBar *navigationBar = mainNav.navigationBar;
     navigationBar.barTintColor = [UIColor whiteColor];
     navigationBar.barStyle = UIBarStyleDefault;
     

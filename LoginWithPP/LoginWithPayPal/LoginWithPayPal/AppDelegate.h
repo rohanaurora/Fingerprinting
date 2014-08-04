@@ -12,4 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+// Username: ecn.test.buyer1@gmail.com
+// Password: ecntest1
+
 @end

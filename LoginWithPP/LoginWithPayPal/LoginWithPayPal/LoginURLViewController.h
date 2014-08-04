@@ -11,5 +11,6 @@
 @interface LoginURLViewController : UIViewController
 
 + (NSString*) returnCustomURLString;
++ (NSString*) enterUserID;
 
 @end

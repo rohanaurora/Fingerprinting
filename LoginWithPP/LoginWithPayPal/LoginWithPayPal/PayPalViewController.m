@@ -10,6 +10,9 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "CheckReachability.h"
 #import "LoginURLViewController.h"
+#import "UserIdentityViewController.h"
+#import "PayPalGuestLoginViewController.h"
+#import "CreateCartViewController.h"
 
 @interface PayPalViewController () {
     MBProgressHUD *HUD;
@@ -18,11 +21,13 @@
 
 @implementation PayPalViewController
 
-const CGFloat XOffset = 20.0;
-const CGFloat HOffset = 30.0;
+
+const CGFloat HOffset = 50.0;
 static NSString *resultIntercept = @"loginsuccess";
 
-- (void) viewWillAppear:(BOOL)animated {
+
+// Close button on the navigation bar
+-(void) viewWillAppear:(BOOL)animated {
     
     UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithTitle:@"Close"
                                                                     style:UIBarButtonItemStylePlain
@@ -40,12 +45,14 @@ static NSString *resultIntercept = @"loginsuccess";
 }
 
 
+// Settings frames for webview and ProgressHUD
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     float xWebView = self.view.frame.origin.x;
-    float yWebView = self.view.frame.origin.y - XOffset;
+    float yWebView = self.view.frame.origin.y;
     float wWebView = self.view.frame.size.width;
     float hxWebView = self.view.frame.size.height - HOffset;
     
@@ -58,16 +65,30 @@ static NSString *resultIntercept = @"loginsuccess";
     HUD.detailsLabelText = @"Establishing secure connection to PayPal...";
     HUD.mode = MBProgressHUDModeIndeterminate;
     [self.view addSubview:HUD];
-    [HUD showWhileExecuting:@selector(loadingPayPalURL) onTarget:self withObject:nil animated:YES];
+    
+    [HUD showWhileExecuting:@selector(loadingPayPalURL)
+                   onTarget:self
+                 withObject:nil
+                   animated:YES];
 }
 
-#pragma mark - Sending URL to WebView
+
+
+// Return method
+// 1. Check Internet Connectivity
+// 2. Send URL
+// 3. Load WebView
 
 -(void) loadingPayPalURL {
     
     [CheckReachability checkInternetConnectivity];
     
     NSURL *url = [NSURL URLWithString:[LoginURLViewController returnCustomURLString]];
+    
+    //Complete URL
+    //NSLog(@"%@",[LoginURLViewController returnCustomURLString]);
+
+    
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:requestObj];
     sleep(1);
@@ -76,34 +97,52 @@ static NSString *resultIntercept = @"loginsuccess";
 
 #pragma mark - UIWebViewDelegate
 
+// 1. Get URL for clicks
+// 2. Intercept loginsuccess
+// 3. Go to CreateCartVC on success
+
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request
                                                  navigationType:(UIWebViewNavigationType)navigationType {
     
     NSString *url = [[request URL] absoluteString];
+    
+    // Display URL for all user clicks
     // NSLog(@"%@\n\n\n", url);
     
-    if ([url rangeOfString:resultIntercept].location != NSNotFound) {
+    if ([url rangeOfString:resultIntercept].location != NSNotFound)
+    {
         NSLog(@"Login successful!");
-        [self barCloseButtonPressed];
+        
+        // [self barCloseButtonPressed];
+        [self performSelector:@selector(goToCreateCartVC:) withObject:nil afterDelay:0.0];
         
     } else {
         
-        NSLog(@"Establishing connection to PayPal servers");
+        NSLog(@"Logging in...");
     }
     
-    if ( navigationType == UIWebViewNavigationTypeLinkClicked )
+    if ( navigationType == UIWebViewNavigationTypeLinkClicked)
     {
         return NO;
     }
     return YES;
+}
+
+// Defined modal transition for CreateCardVC
+
+-(void) goToCreateCartVC:(id)sender {
+    
+    CreateCartViewController *CreateCartVC = [[CreateCartViewController alloc] init];
+    [self setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
+    [self.navigationController pushViewController:CreateCartVC animated:YES];
     
 }
+
 
 
 - (void)willAnimateRotationToInterfaceOrientation: (UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
     [self.webView setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    
 }
 
 
@@ -111,11 +150,6 @@ static NSString *resultIntercept = @"loginsuccess";
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end

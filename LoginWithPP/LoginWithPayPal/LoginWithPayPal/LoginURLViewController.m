@@ -22,23 +22,41 @@ static NSString const *RESPONSE_TYPE = @"&response_type=code&";
 
 static NSString const *SCOPE = @"scope=openid%20profile%20email%20address%20phone%20https%3A%2F%2Furi.paypal.com%2Fservices%2Fpaypalattributes%20https%3A%2F%2Fapi.paypal.com%2Fv1%2Fvault%2Fcredit-card%20https%3A%2F%2Fapi.paypal.com%2Fv1%2Fvault%2Fcredit-card%2F.*%20https%3A%2F%2Fapi.paypal.com%2Fv1%2Fpayments%2F.*&redirect_uri=";
 
-static NSString const *REDIRECT_URI_PART1 =  @"http%253A%252F%252Fphx5qa01c-852d.stratus.phx.qa.ebay.com%253A8080%252Finlinexoweb%252Fv1%252Fauthenticate%253Fstate%253DUserName";
+
+static NSString const *REDIRECT_URI_PART1 =  @"https://api.sandbox.checkout.ecn.ebay.com/inlinexoweb/v1/authenticate?state=";
 
 static NSString const *REDIRECT_URI_PART2 = @"&nonce=16711309&newUI=Y";
 
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+// Temporarily hard code values for User-Identity/Session-Id - PLEASE KEEP CHANGING
++ (NSString*) enterUserID {
+
+    NSString *USER_IDENTITY = @"UserZin99";
+    
+    return USER_IDENTITY;
+    
 }
 
+
+
+
+// Joining URL for Webview
 + (NSString*) returnCustomURLString {
     
-    NSString *customURLString = [NSString stringWithFormat:@"%@%@%@%@%@%@%@%@",PAYPAL_LOGIN_SCHEME, PAYPAL_HOST, PAYPAL_QUERY,CLIENT_ID, RESPONSE_TYPE, SCOPE, REDIRECT_URI_PART1, REDIRECT_URI_PART2];
+    NSString *customURLString = [NSString stringWithFormat:
+                                 @"%@%@%@%@%@%@%@%@%@",
+                                 PAYPAL_LOGIN_SCHEME,
+                                 PAYPAL_HOST,
+                                 PAYPAL_QUERY,CLIENT_ID,
+                                 RESPONSE_TYPE,
+                                 SCOPE,
+                                 REDIRECT_URI_PART1,
+                                 [[self class] enterUserID],
+                                 REDIRECT_URI_PART2];
     
     return customURLString;
-}
+   }
 
 
 @end

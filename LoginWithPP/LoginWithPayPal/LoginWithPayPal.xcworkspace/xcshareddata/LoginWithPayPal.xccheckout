@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B9F65F7E-2FA1-4F01-82C5-00A762E38D2F</string>
+	<string>A5CF4885-39A4-4962-9007-6B5120EF334A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>LoginWithPayPal</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>8FA23174-6ECC-4FCD-B912-AD25A937F37F</key>
+		<key>FAA69C3F-6A2F-41ED-B2FF-28CA8C9B46AE</key>
 		<string>https://github.com/rohanaurora/Beta-Inline-Checkout.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>LoginWithPP/LoginWithPayPal/LoginWithPayPal.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>8FA23174-6ECC-4FCD-B912-AD25A937F37F</key>
+		<key>FAA69C3F-6A2F-41ED-B2FF-28CA8C9B46AE</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8FA23174-6ECC-4FCD-B912-AD25A937F37F</string>
+	<string>FAA69C3F-6A2F-41ED-B2FF-28CA8C9B46AE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>8FA23174-6ECC-4FCD-B912-AD25A937F37F</string>
+			<string>FAA69C3F-6A2F-41ED-B2FF-28CA8C9B46AE</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Beta Inline Checkout</string>
 		</dict>

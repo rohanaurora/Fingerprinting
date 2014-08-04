@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PayPalViewController : UIViewController <UIWebViewDelegate>
+@interface PayPalViewController : UIViewController <UIWebViewDelegate, NSURLSessionDataDelegate>
 
 @property (strong, nonatomic) UIWebView *webView;
 
 - (void)barCloseButtonPressed;
-
 
 @end

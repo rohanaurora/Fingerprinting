@@ -10,4 +10,11 @@
 
 @interface BuyNowViewController : UIViewController
 
+@property(strong, nonatomic) UIButton *radiobutton1;
+@property(strong, nonatomic) UIButton *radiobutton2;
+@property(strong, nonatomic) UIButton *buy_now_button;
+
+-(void)radiobuttonSelected:(id)sender;
+
+
 @end
