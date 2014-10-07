@@ -1,5 +1,5 @@
-#Beta-Inline-Checkout
+#Fingerprint Project
 
-###Instructions -
+Use SHA-1 third-party dependency -
 
-This is the main repo where we will share sample apps while developing the InLine-Checkout SDK for eBay Advertising.
+https://github.com/karelia/KSCrypto
