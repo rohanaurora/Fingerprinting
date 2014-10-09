@@ -1,2 +1,5 @@
-pod 'KSCrypto', '~> 1.2'
-pod 'PDKeychainBindingsController', '~> 0.0'
+source 'https://github.com/artsy/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+pod 'KSCrypto', :head
+pod 'PDKeychainBindingsController', :head
