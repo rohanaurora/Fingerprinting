@@ -1,5 +1,3 @@
-#Fingerprint Project
+#Fingerprinting
 
-Use SHA-1 third-party dependency -
-
-https://github.com/karelia/KSCrypto
+**A simple project providing a SHA1 Fingerprint solution.**
